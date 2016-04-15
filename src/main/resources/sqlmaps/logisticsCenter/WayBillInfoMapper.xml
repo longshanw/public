@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillInfo" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="order_flag" property="orderFlag" jdbcType="VARCHAR" />
+    <result column="order_number" property="orderNumber" jdbcType="VARCHAR" />
+    <result column="waybill_source" property="waybillSource" jdbcType="VARCHAR" />
+    <result column="waybill_number" property="waybillNumber" jdbcType="VARCHAR" />
+    <result column="waybill_status" property="waybillStatus" jdbcType="CHAR" />
+    <result column="is_writeback" property="isWriteback" jdbcType="INTEGER" />
+    <result column="last_time" property="lastTime" jdbcType="TIMESTAMP" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, order_flag, order_number, waybill_source, waybill_number, waybill_status, is_writeback, 
+    last_time, create_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from waybill_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  
+   <!-- 根据条件查询 -->
+  <select id="selectWayBillInfoListByCondition" resultMap="BaseResultMap" parameterType="java.util.Map" >
+    select 
+    <include refid="Base_Column_List" />
+    from waybill_info
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+		<if test="orderFlag !=null and orderFlag !='' ">
+			and order_flag = #{orderFlag,jdbcType=VARCHAR}
+		</if>
+		<if test="orderNumber !=null and orderNumber !='' ">
+			and order_number = #{orderNumber,jdbcType=VARCHAR}
+		</if>
+		<if test="waybillSource !=null and waybillSource !='' ">
+			and waybill_source = #{waybillSource,jdbcType=VARCHAR}
+		</if>
+		<if test="waybillNumber !=null and waybillNumber !='' ">
+			and waybill_number = #{waybillNumber,jdbcType=VARCHAR}
+		</if>
+		<if test="waybillStatus !=null and waybillStatus !='' ">
+			and waybill_status = #{waybillStatus,jdbcType=VARCHAR}
+		</if>
+    </trim>
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from waybill_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillInfo" >
+    insert into waybill_info (id, order_flag, order_number, 
+      waybill_source, waybill_number, waybill_status, 
+      is_writeback, last_time, create_time
+      )
+    values (#{id,jdbcType=BIGINT}, #{orderFlag,jdbcType=VARCHAR}, #{orderNumber,jdbcType=VARCHAR}, 
+      #{waybillSource,jdbcType=VARCHAR}, #{waybillNumber,jdbcType=VARCHAR}, #{waybillStatus,jdbcType=CHAR}, 
+      #{isWriteback,jdbcType=INTEGER}, #{lastTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  
+   <!-- 批量insert -->
+  <insert id="insertWayBillInfoBatch" parameterType="java.util.List" >
+    insert into waybill_info (order_flag, order_number, 
+      waybill_source, waybill_number, waybill_status, 
+      is_writeback, last_time, create_time) values 
+   	<foreach collection="list" item="item" index="index" separator="," >
+   	( #{item.orderFlag,jdbcType=VARCHAR}, #{item.orderNumber,jdbcType=VARCHAR}, 
+      #{item.waybillSource,jdbcType=VARCHAR}, #{item.waybillNumber,jdbcType=VARCHAR}, #{item.waybillStatus,jdbcType=CHAR}, 
+      #{item.isWriteback,jdbcType=INTEGER}, #{item.lastTime,jdbcType=TIMESTAMP}, #{item.createTime,jdbcType=TIMESTAMP}
+      )
+      </foreach>
+  </insert>
+  
+  <insert id="insertSelective" parameterType="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillInfo" >
+    insert into waybill_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="orderFlag != null" >
+        order_flag,
+      </if>
+      <if test="orderNumber != null" >
+        order_number,
+      </if>
+      <if test="waybillSource != null" >
+        waybill_source,
+      </if>
+      <if test="waybillNumber != null" >
+        waybill_number,
+      </if>
+      <if test="waybillStatus != null" >
+        waybill_status,
+      </if>
+      <if test="isWriteback != null" >
+        is_writeback,
+      </if>
+      <if test="lastTime != null" >
+        last_time,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="orderFlag != null" >
+        #{orderFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNumber != null" >
+        #{orderNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillSource != null" >
+        #{waybillSource,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillNumber != null" >
+        #{waybillNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillStatus != null" >
+        #{waybillStatus,jdbcType=CHAR},
+      </if>
+      <if test="isWriteback != null" >
+        #{isWriteback,jdbcType=INTEGER},
+      </if>
+      <if test="lastTime != null" >
+        #{lastTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillInfo" >
+    update waybill_info
+    <set >
+      <if test="orderFlag != null" >
+        order_flag = #{orderFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNumber != null" >
+        order_number = #{orderNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillSource != null" >
+        waybill_source = #{waybillSource,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillNumber != null" >
+        waybill_number = #{waybillNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillStatus != null" >
+        waybill_status = #{waybillStatus,jdbcType=CHAR},
+      </if>
+      <if test="isWriteback != null" >
+        is_writeback = #{isWriteback,jdbcType=INTEGER},
+      </if>
+      <if test="lastTime != null" >
+        last_time = #{lastTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillInfo" >
+    update waybill_info
+    set order_flag = #{orderFlag,jdbcType=VARCHAR},
+      order_number = #{orderNumber,jdbcType=VARCHAR},
+      waybill_source = #{waybillSource,jdbcType=VARCHAR},
+      waybill_number = #{waybillNumber,jdbcType=VARCHAR},
+      waybill_status = #{waybillStatus,jdbcType=CHAR},
+      is_writeback = #{isWriteback,jdbcType=INTEGER},
+      last_time = #{lastTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  
+  <!-- 根据时间及运单来源返回订单号结果集 -->
+  <select id="queryWayBillNumbers" parameterType="com.ehaoyao.logistics.jd.vo.WayBillInfoVo" resultType="java.lang.String" >
+    select waybill_number
+	from waybill_info
+	where create_time &gt;#{startTime}  
+	and create_time &lt; #{endTime}
+	and waybill_source = #{waybillSource}
+	<if test="waybillStatusList != null and waybillStatusList.size > 0">
+		<foreach collection="waybillStatusList" item="waybillStatus" open="AND waybill_status IN (" close=")" separator=",">
+			#{waybillStatus}
+		</foreach>
+	</if>    
+  </select>
+   <!-- 根据运单号返回实体对象 -->
+  <select id="selectByWayBillNumber" resultMap="BaseResultMap"  parameterType="java.lang.String" >
+    select
+	 <include refid="Base_Column_List" />
+    from waybill_info
+	where waybill_number = #{waybillNumber, jdbcType=VARCHAR}  
+  </select>
+  
+</mapper>

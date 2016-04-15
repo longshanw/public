@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ehaoyao.logistics.jd.mapper.ordercenter.ExpressInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.ehaoyao.logistics.jd.model.ordercenter.ExpressInfo" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="express_id" property="expressId" jdbcType="VARCHAR" />
+    <result column="express_com_id" property="expressComId" jdbcType="VARCHAR" />
+    <result column="express_com_code" property="expressComCode" jdbcType="VARCHAR" />
+    <result column="express_com_name" property="expressComName" jdbcType="VARCHAR" />
+    <result column="order_number" property="orderNumber" jdbcType="VARCHAR" />
+    <result column="express_price" property="expressPrice" jdbcType="DOUBLE" />
+    <result column="delivery_date_type" property="deliveryDateType" jdbcType="VARCHAR" />
+    <result column="delivery_type" property="deliveryType" jdbcType="VARCHAR" />
+    <result column="express_status" property="expressStatus" jdbcType="VARCHAR" />
+    <result column="delivery_date" property="deliveryDate" jdbcType="VARCHAR" />
+    <result column="delivery_notice" property="deliveryNotice" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="distribution_center_name" property="distributionCenterName" jdbcType="VARCHAR" />
+    <result column="picking_code" property="pickingCode" jdbcType="VARCHAR" />
+    <result column="distribution_station_name" property="distributionStationName" jdbcType="VARCHAR" />
+    <result column="products_count" property="productsCount" jdbcType="INTEGER" />
+    <result column="outbound_time" property="outboundTime" jdbcType="VARCHAR" />
+    <result column="order_flag" property="orderFlag" jdbcType="VARCHAR" />
+    <result column="jd_trade_no" property="jdTradeNo" jdbcType="VARCHAR" />
+    <result column="start_time" property="startTime" jdbcType="VARCHAR" />
+    <result column="shuold_pay" property="shuoldPay" jdbcType="VARCHAR" />
+    <result column="pay_type" property="payType" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, express_id, express_com_id, express_com_code, express_com_name, order_number, 
+    express_price, delivery_date_type, delivery_type, express_status, delivery_date, 
+    delivery_notice, remark, distribution_center_name, picking_code, distribution_station_name, 
+    products_count, outbound_time, order_flag, jd_trade_no, start_time, shuold_pay, pay_type
+  </sql>
+  
+  
+  <resultMap id="CompositeResultMap" type="com.ehaoyao.logistics.jd.vo.OrderExpressVo" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="express_id" property="expressId" jdbcType="VARCHAR" />
+    <result column="express_com_id" property="expressComId" jdbcType="VARCHAR" />
+    <result column="express_com_code" property="expressComCode" jdbcType="VARCHAR" />
+    <result column="express_com_name" property="expressComName" jdbcType="VARCHAR" />
+    <result column="order_number" property="orderNumber" jdbcType="VARCHAR" />
+    <result column="express_price" property="expressPrice" jdbcType="DOUBLE" />
+    <result column="delivery_date_type" property="deliveryDateType" jdbcType="VARCHAR" />
+    <result column="delivery_type" property="deliveryType" jdbcType="VARCHAR" />
+    <result column="express_status" property="expressStatus" jdbcType="VARCHAR" />
+    <result column="delivery_date" property="deliveryDate" jdbcType="VARCHAR" />
+    <result column="delivery_notice" property="deliveryNotice" jdbcType="VARCHAR" />
+    <result column="remark" property="remark" jdbcType="VARCHAR" />
+    <result column="distribution_center_name" property="distributionCenterName" jdbcType="VARCHAR" />
+    <result column="picking_code" property="pickingCode" jdbcType="VARCHAR" />
+    <result column="distribution_station_name" property="distributionStationName" jdbcType="VARCHAR" />
+    <result column="products_count" property="productsCount" jdbcType="INTEGER" />
+    <result column="outbound_time" property="outboundTime" jdbcType="VARCHAR" />
+    <result column="order_flag" property="orderFlag" jdbcType="VARCHAR" />
+    <result column="jd_trade_no" property="jdTradeNo" jdbcType="VARCHAR" />
+    <result column="start_time" property="startTime" jdbcType="VARCHAR" />
+    <result column="shuold_pay" property="shuoldPay" jdbcType="VARCHAR" />
+    <result column="pay_type" property="payType" jdbcType="VARCHAR" />
+    <result column="order_status" property="orderStatus" jdbcType="VARCHAR" />
+  </resultMap>
+   <sql id="Composite_Column_List" >
+    f.id, f.express_id, f.express_com_id, f.express_com_code, f.express_com_name, f.order_number, 
+    f.express_price, f.delivery_date_type, f.delivery_type, f.express_status, f.delivery_date, 
+    f.delivery_notice, f.remark, f.distribution_center_name, f.picking_code, f.distribution_station_name, 
+    f.products_count, f.outbound_time, f.order_flag, f.jd_trade_no, f.start_time, f.shuold_pay, f.pay_type, o.order_status
+  </sql>
+  
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from express_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  
+   <!-- 根据条件查询 -->
+  <select id="selectExpressInfoListByCondition" resultMap="BaseResultMap" parameterType="java.util.Map" >
+    select 
+    <include refid="Base_Column_List" />
+    from express_info
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+		<if test="orderFlag !=null and orderFlag !='' ">
+			and order_flag = #{orderFlag,jdbcType=VARCHAR}
+		</if>
+		<if test="orderNumber !=null and orderNumber !='' ">
+			and order_number = #{orderNumber,jdbcType=VARCHAR}
+		</if>
+		<if test="wayBillTimeStart !=null and wayBillTimeStart !='' ">
+			and start_time &gt;= #{wayBillTimeStart,jdbcType=VARCHAR}
+		</if>
+		<if test="wayBillTimeEnd !=null and wayBillTimeEnd !='' ">
+			and start_time &lt;= #{wayBillTimeEnd,jdbcType=VARCHAR}
+		</if>
+    </trim>
+  </select>
+  
+   <!-- 根据条件查询，已配送的 -->
+  <select id="selectHasShipByCondition" resultMap="CompositeResultMap" parameterType="java.util.Map" >
+    select 
+    <include refid="Composite_Column_List" />
+    from express_info f join order_info o on  f.order_number=o.order_number and f.order_flag=o.order_flag   
+    and f.express_id is not null and f.express_id!='' 
+    <trim prefix="WHERE" prefixOverrides="AND|OR">
+		<if test="orderFlag !=null and orderFlag !='' ">
+			and f.order_flag = #{orderFlag,jdbcType=VARCHAR}
+		</if>
+		<if test="orderNumber !=null and orderNumber !='' ">
+			and f.order_number = #{orderNumber,jdbcType=VARCHAR}
+		</if>
+		<if test="wayBillTimeStart !=null and wayBillTimeStart !='' ">
+			and f.start_time &gt;= #{wayBillTimeStart,jdbcType=VARCHAR}
+		</if>
+		<if test="wayBillTimeEnd !=null and wayBillTimeEnd !='' ">
+			and f.start_time &lt;= #{wayBillTimeEnd,jdbcType=VARCHAR}
+		</if>
+		<if test="orderStatusArr !=null and orderStatusArr.length>0 ">
+			and o.order_status in 
+			<foreach item="item" index="index" collection="orderStatusArr" open="(" separator="," close=")">  
+			 #{item}  
+			</foreach> 
+		</if>
+		 order by f.start_time 
+    </trim>
+  </select>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from express_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.ehaoyao.logistics.jd.model.ordercenter.ExpressInfo" >
+    insert into express_info (id, express_id, express_com_id, 
+      express_com_code, express_com_name, order_number, 
+      express_price, delivery_date_type, delivery_type, 
+      express_status, delivery_date, delivery_notice, 
+      remark, distribution_center_name, picking_code, 
+      distribution_station_name, products_count, 
+      outbound_time, order_flag, jd_trade_no, 
+      start_time, shuold_pay, pay_type
+      )
+    values (#{id,jdbcType=BIGINT}, #{expressId,jdbcType=VARCHAR}, #{expressComId,jdbcType=VARCHAR}, 
+      #{expressComCode,jdbcType=VARCHAR}, #{expressComName,jdbcType=VARCHAR}, #{orderNumber,jdbcType=VARCHAR}, 
+      #{expressPrice,jdbcType=DOUBLE}, #{deliveryDateType,jdbcType=VARCHAR}, #{deliveryType,jdbcType=VARCHAR}, 
+      #{expressStatus,jdbcType=VARCHAR}, #{deliveryDate,jdbcType=VARCHAR}, #{deliveryNotice,jdbcType=VARCHAR}, 
+      #{remark,jdbcType=VARCHAR}, #{distributionCenterName,jdbcType=VARCHAR}, #{pickingCode,jdbcType=VARCHAR}, 
+      #{distributionStationName,jdbcType=VARCHAR}, #{productsCount,jdbcType=INTEGER}, 
+      #{outboundTime,jdbcType=VARCHAR}, #{orderFlag,jdbcType=VARCHAR}, #{jdTradeNo,jdbcType=VARCHAR}, 
+      #{startTime,jdbcType=VARCHAR}, #{shuoldPay,jdbcType=VARCHAR}, #{payType,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.ehaoyao.logistics.jd.model.ordercenter.ExpressInfo" >
+    insert into express_info
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="expressId != null" >
+        express_id,
+      </if>
+      <if test="expressComId != null" >
+        express_com_id,
+      </if>
+      <if test="expressComCode != null" >
+        express_com_code,
+      </if>
+      <if test="expressComName != null" >
+        express_com_name,
+      </if>
+      <if test="orderNumber != null" >
+        order_number,
+      </if>
+      <if test="expressPrice != null" >
+        express_price,
+      </if>
+      <if test="deliveryDateType != null" >
+        delivery_date_type,
+      </if>
+      <if test="deliveryType != null" >
+        delivery_type,
+      </if>
+      <if test="expressStatus != null" >
+        express_status,
+      </if>
+      <if test="deliveryDate != null" >
+        delivery_date,
+      </if>
+      <if test="deliveryNotice != null" >
+        delivery_notice,
+      </if>
+      <if test="remark != null" >
+        remark,
+      </if>
+      <if test="distributionCenterName != null" >
+        distribution_center_name,
+      </if>
+      <if test="pickingCode != null" >
+        picking_code,
+      </if>
+      <if test="distributionStationName != null" >
+        distribution_station_name,
+      </if>
+      <if test="productsCount != null" >
+        products_count,
+      </if>
+      <if test="outboundTime != null" >
+        outbound_time,
+      </if>
+      <if test="orderFlag != null" >
+        order_flag,
+      </if>
+      <if test="jdTradeNo != null" >
+        jd_trade_no,
+      </if>
+      <if test="startTime != null" >
+        start_time,
+      </if>
+      <if test="shuoldPay != null" >
+        shuold_pay,
+      </if>
+      <if test="payType != null" >
+        pay_type,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="expressId != null" >
+        #{expressId,jdbcType=VARCHAR},
+      </if>
+      <if test="expressComId != null" >
+        #{expressComId,jdbcType=VARCHAR},
+      </if>
+      <if test="expressComCode != null" >
+        #{expressComCode,jdbcType=VARCHAR},
+      </if>
+      <if test="expressComName != null" >
+        #{expressComName,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNumber != null" >
+        #{orderNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="expressPrice != null" >
+        #{expressPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="deliveryDateType != null" >
+        #{deliveryDateType,jdbcType=VARCHAR},
+      </if>
+      <if test="deliveryType != null" >
+        #{deliveryType,jdbcType=VARCHAR},
+      </if>
+      <if test="expressStatus != null" >
+        #{expressStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="deliveryDate != null" >
+        #{deliveryDate,jdbcType=VARCHAR},
+      </if>
+      <if test="deliveryNotice != null" >
+        #{deliveryNotice,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null" >
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="distributionCenterName != null" >
+        #{distributionCenterName,jdbcType=VARCHAR},
+      </if>
+      <if test="pickingCode != null" >
+        #{pickingCode,jdbcType=VARCHAR},
+      </if>
+      <if test="distributionStationName != null" >
+        #{distributionStationName,jdbcType=VARCHAR},
+      </if>
+      <if test="productsCount != null" >
+        #{productsCount,jdbcType=INTEGER},
+      </if>
+      <if test="outboundTime != null" >
+        #{outboundTime,jdbcType=VARCHAR},
+      </if>
+      <if test="orderFlag != null" >
+        #{orderFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="jdTradeNo != null" >
+        #{jdTradeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="startTime != null" >
+        #{startTime,jdbcType=VARCHAR},
+      </if>
+      <if test="shuoldPay != null" >
+        #{shuoldPay,jdbcType=VARCHAR},
+      </if>
+      <if test="payType != null" >
+        #{payType,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ehaoyao.logistics.jd.model.ordercenter.ExpressInfo" >
+    update express_info
+    <set >
+      <if test="expressId != null" >
+        express_id = #{expressId,jdbcType=VARCHAR},
+      </if>
+      <if test="expressComId != null" >
+        express_com_id = #{expressComId,jdbcType=VARCHAR},
+      </if>
+      <if test="expressComCode != null" >
+        express_com_code = #{expressComCode,jdbcType=VARCHAR},
+      </if>
+      <if test="expressComName != null" >
+        express_com_name = #{expressComName,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNumber != null" >
+        order_number = #{orderNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="expressPrice != null" >
+        express_price = #{expressPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="deliveryDateType != null" >
+        delivery_date_type = #{deliveryDateType,jdbcType=VARCHAR},
+      </if>
+      <if test="deliveryType != null" >
+        delivery_type = #{deliveryType,jdbcType=VARCHAR},
+      </if>
+      <if test="expressStatus != null" >
+        express_status = #{expressStatus,jdbcType=VARCHAR},
+      </if>
+      <if test="deliveryDate != null" >
+        delivery_date = #{deliveryDate,jdbcType=VARCHAR},
+      </if>
+      <if test="deliveryNotice != null" >
+        delivery_notice = #{deliveryNotice,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null" >
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="distributionCenterName != null" >
+        distribution_center_name = #{distributionCenterName,jdbcType=VARCHAR},
+      </if>
+      <if test="pickingCode != null" >
+        picking_code = #{pickingCode,jdbcType=VARCHAR},
+      </if>
+      <if test="distributionStationName != null" >
+        distribution_station_name = #{distributionStationName,jdbcType=VARCHAR},
+      </if>
+      <if test="productsCount != null" >
+        products_count = #{productsCount,jdbcType=INTEGER},
+      </if>
+      <if test="outboundTime != null" >
+        outbound_time = #{outboundTime,jdbcType=VARCHAR},
+      </if>
+      <if test="orderFlag != null" >
+        order_flag = #{orderFlag,jdbcType=VARCHAR},
+      </if>
+      <if test="jdTradeNo != null" >
+        jd_trade_no = #{jdTradeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="startTime != null" >
+        start_time = #{startTime,jdbcType=VARCHAR},
+      </if>
+      <if test="shuoldPay != null" >
+        shuold_pay = #{shuoldPay,jdbcType=VARCHAR},
+      </if>
+      <if test="payType != null" >
+        pay_type = #{payType,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ehaoyao.logistics.jd.model.ordercenter.ExpressInfo" >
+    update express_info
+    set express_id = #{expressId,jdbcType=VARCHAR},
+      express_com_id = #{expressComId,jdbcType=VARCHAR},
+      express_com_code = #{expressComCode,jdbcType=VARCHAR},
+      express_com_name = #{expressComName,jdbcType=VARCHAR},
+      order_number = #{orderNumber,jdbcType=VARCHAR},
+      express_price = #{expressPrice,jdbcType=DOUBLE},
+      delivery_date_type = #{deliveryDateType,jdbcType=VARCHAR},
+      delivery_type = #{deliveryType,jdbcType=VARCHAR},
+      express_status = #{expressStatus,jdbcType=VARCHAR},
+      delivery_date = #{deliveryDate,jdbcType=VARCHAR},
+      delivery_notice = #{deliveryNotice,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      distribution_center_name = #{distributionCenterName,jdbcType=VARCHAR},
+      picking_code = #{pickingCode,jdbcType=VARCHAR},
+      distribution_station_name = #{distributionStationName,jdbcType=VARCHAR},
+      products_count = #{productsCount,jdbcType=INTEGER},
+      outbound_time = #{outboundTime,jdbcType=VARCHAR},
+      order_flag = #{orderFlag,jdbcType=VARCHAR},
+      jd_trade_no = #{jdTradeNo,jdbcType=VARCHAR},
+      start_time = #{startTime,jdbcType=VARCHAR},
+      shuold_pay = #{shuoldPay,jdbcType=VARCHAR},
+      pay_type = #{payType,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+			http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+			http://www.springframework.org/schema/context
+			http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+		
+		<!-- 注解扫面包路径 -->
+   	    <context:component-scan base-package="com.ehaoyao.logistics"/>
+	    <context:property-placeholder location="classpath:jdbc.properties"/>
+   	    
+     	<!-- 启注解扫描 -->
+		<context:annotation-config />
+		
+		<!-- 定义切面功能 -->
+		<!-- <aop:aspectj-autoproxy /> -->
+		
+	    <!-- 开启事务注解驱动 -->  
+	    <!-- <tx:annotation-driven />   -->
+		
+	    <import resource="applicationContext-scheduled.xml"/>
+	    <import resource="applicationContext-ibatis-logisticsCenter.xml"/>
+    	<import resource="applicationContext-ibatis-orderCenter.xml"/>
+   	   
+	    
+    	
+</beans>

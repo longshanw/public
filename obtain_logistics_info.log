@@ -1,0 +1,1188 @@
+[INFO ] 2016-04-13 11:27:09,752 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a0f6e9d: startup date [Wed Apr 13 11:27:09 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:27:09,809 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO ] 2016-04-13 11:27:33,698 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@28615dc4: startup date [Wed Apr 13 11:27:33 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:27:33,758 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:27:34,122 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 11:27:34,246 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 11:27:34,499 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:158)
+No MyBatis mapper was found in '[com.ehaoyao.obtain_logistics_info.**.mapper.*(..)]' package. Please check your configuration.
+[INFO ] 2016-04-13 11:27:34,526 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:27:34,611 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d482f63: defining beans [toLogisticsCenterServiceImpl,waybillInfoServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.aop.config.internalAutoProxyCreator,dataSourceLogisticsCenter,sqlSessionFactoryLogisticsCenter,sqlSessionTemplateLogisticsCenter,mapperScannerLogisticsCenter,transactionManagerLogisticsCenter,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceLogisticsCenter,daoPointLogisticsCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:27:35,268 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:27:35,908 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 11:30:09,148 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@28615dc4: startup date [Wed Apr 13 11:30:09 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:30:09,204 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:30:09,500 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 11:30:09,616 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 11:30:09,856 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:158)
+No MyBatis mapper was found in '[com.ehaoyao.obtain_logistics_info.**.mapper.*(..)]' package. Please check your configuration.
+[INFO ] 2016-04-13 11:30:09,874 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:30:09,938 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9f9fec0: defining beans [toLogisticsCenterServiceImpl,waybillInfoServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceLogisticsCenter,sqlSessionFactoryLogisticsCenter,sqlSessionTemplateLogisticsCenter,mapperScannerLogisticsCenter,transactionManagerLogisticsCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceLogisticsCenter,daoPointLogisticsCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:30:10,612 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:30:11,303 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 11:30:27,105 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@50a0fdd1: startup date [Wed Apr 13 11:30:27 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:30:27,163 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:30:27,486 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 11:30:27,606 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 11:30:28,026 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:158)
+No MyBatis mapper was found in '[com.ehaoyao.obtain_logistics_info.**.mapper.*(..)]' package. Please check your configuration.
+[INFO ] 2016-04-13 11:30:28,055 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:30:28,128 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@24243e9f: defining beans [toLogisticsCenterServiceImpl,waybillInfoServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceLogisticsCenter,sqlSessionFactoryLogisticsCenter,sqlSessionTemplateLogisticsCenter,mapperScannerLogisticsCenter,transactionManagerLogisticsCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceLogisticsCenter,daoPointLogisticsCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:30:28,762 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:30:29,392 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 11:37:02,059 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73600b34: startup date [Wed Apr 13 11:37:02 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:37:02,116 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:37:02,501 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:37:02,523 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@67940cc9: defining beans [toLogisticsCenterServiceImpl,waybillInfoServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ] 2016-04-13 11:37:02,533 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:444)
+Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@67940cc9: defining beans [toLogisticsCenterServiceImpl,waybillInfoServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ] 2016-04-13 11:38:23,494 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@50a0fdd1: startup date [Wed Apr 13 11:38:23 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:38:23,550 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:38:23,986 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:38:24,016 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@51c7747e: defining beans [toLogisticsCenterServiceImpl,waybillInfoServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ] 2016-04-13 11:38:24,036 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:444)
+Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@51c7747e: defining beans [toLogisticsCenterServiceImpl,waybillInfoServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ] 2016-04-13 11:38:34,564 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 11:38:34 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:38:34,620 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:38:35,001 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:38:35,018 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@799647c: defining beans [toLogisticsCenterServiceImpl,waybillInfoServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ] 2016-04-13 11:38:35,035 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:444)
+Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@799647c: defining beans [toLogisticsCenterServiceImpl,waybillInfoServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ] 2016-04-13 11:39:54,686 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 11:39:54 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:39:54,740 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:39:55,132 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:39:55,149 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1f0480e1: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ] 2016-04-13 11:41:48,905 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@604b7b51: startup date [Wed Apr 13 11:41:48 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:41:48,960 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:41:49,426 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:41:49,452 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@89ac7bd: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor]; root of factory hierarchy
+[INFO ] 2016-04-13 11:42:23,308 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@267fbe19: startup date [Wed Apr 13 11:42:23 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:42:23,362 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:42:23,677 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 11:42:23,727 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 11:42:23,821 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 11:42:24,052 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:158)
+No MyBatis mapper was found in '[com.ehaoyao.obtain_logistics_info.**.mapper.*(..)]' package. Please check your configuration.
+[INFO ] 2016-04-13 11:42:24,073 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:42:24,140 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d0b53e6: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,jdExpressTask,org.springframework.scheduling.support.ScheduledMethodRunnable#0,org.springframework.scheduling.config.CronTask#0,org.springframework.scheduling.config.ContextLifecycleScheduledTaskRegistrar#0,toLogisticsCenterService,dataSourceLogisticsCenter,sqlSessionFactoryLogisticsCenter,sqlSessionTemplateLogisticsCenter,mapperScannerLogisticsCenter,transactionManagerLogisticsCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceLogisticsCenter,daoPointLogisticsCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:42:24,730 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:42:25,228 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:444)
+Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1d0b53e6: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,jdExpressTask,org.springframework.scheduling.support.ScheduledMethodRunnable#0,org.springframework.scheduling.config.CronTask#0,org.springframework.scheduling.config.ContextLifecycleScheduledTaskRegistrar#0,toLogisticsCenterService,dataSourceLogisticsCenter,sqlSessionFactoryLogisticsCenter,sqlSessionTemplateLogisticsCenter,mapperScannerLogisticsCenter,transactionManagerLogisticsCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceLogisticsCenter,daoPointLogisticsCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:42:25,240 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 11:42:57,227 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@604b7b51: startup date [Wed Apr 13 11:42:57 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:42:57,284 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:42:57,576 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 11:42:57,687 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 11:42:57,950 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:158)
+No MyBatis mapper was found in '[com.ehaoyao.obtain_logistics_info.**.mapper.*(..)]' package. Please check your configuration.
+[INFO ] 2016-04-13 11:42:57,970 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:42:58,036 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@62175e41: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceLogisticsCenter,sqlSessionFactoryLogisticsCenter,sqlSessionTemplateLogisticsCenter,mapperScannerLogisticsCenter,transactionManagerLogisticsCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceLogisticsCenter,daoPointLogisticsCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:42:58,637 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:42:59,118 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 11:43:29,324 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 11:43:29 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:43:29,380 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:43:29,694 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 11:43:29,811 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 11:43:30,130 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:158)
+No MyBatis mapper was found in '[com.ehaoyao.obtain_logistics_info.**.mapper.*(..)]' package. Please check your configuration.
+[INFO ] 2016-04-13 11:43:30,156 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:43:30,202 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e7ef926: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceLogisticsCenter,sqlSessionFactoryLogisticsCenter,sqlSessionTemplateLogisticsCenter,mapperScannerLogisticsCenter,transactionManagerLogisticsCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceLogisticsCenter,daoPointLogisticsCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:43:30,762 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:43:31,215 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:444)
+Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5e7ef926: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceLogisticsCenter,sqlSessionFactoryLogisticsCenter,sqlSessionTemplateLogisticsCenter,mapperScannerLogisticsCenter,transactionManagerLogisticsCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceLogisticsCenter,daoPointLogisticsCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:43:31,230 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 11:44:22,668 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@267fbe19: startup date [Wed Apr 13 11:44:22 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:44:22,722 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:44:23,031 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:44:23,329 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:44:23,376 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4023cecd: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:44:23,936 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:44:24,330 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:444)
+Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4023cecd: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:44:24,342 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 11:45:27,247 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@267fbe19: startup date [Wed Apr 13 11:45:27 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:45:27,310 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:45:27,589 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:45:27,876 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:45:27,921 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4023cecd: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:45:28,480 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:45:28,890 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:444)
+Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4023cecd: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:45:28,903 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 11:48:35,487 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 11:48:35 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:48:35,540 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:48:35,839 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:48:36,361 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:48:36,413 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4cfa1baf: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:48:37,016 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@10530392: startup date [Wed Apr 13 11:48:37 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:48:37,106 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:48:37,150 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:48:37,493 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:48:37,974 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:48:38,029 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@55e02f98: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:48:38,588 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:49:07,836 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 11:49:07 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:49:07,887 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:49:08,157 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:49:08,444 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:49:08,490 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4cfa1baf: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:49:09,035 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:49:09,437 method:org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:444)
+Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4cfa1baf: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:49:09,449 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 11:49:26,900 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@c996f0e: startup date [Wed Apr 13 11:49:26 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:49:26,951 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:49:27,216 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:49:27,490 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:49:27,533 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6ede15a0: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:49:28,017 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:49:56,330 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7977cdb1: startup date [Wed Apr 13 11:49:56 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:49:56,416 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:49:56,755 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:49:57,067 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:49:57,120 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@f9a4520: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,toLogisticsCenterService,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:49:57,700 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:51:05,845 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 11:51:05 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:51:05,896 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:51:06,192 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:51:06,488 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:51:06,530 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4cfa1baf: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:51:07,059 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:52:17,844 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d4a0698: startup date [Wed Apr 13 11:52:17 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:52:17,897 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:52:18,179 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:52:18,460 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:52:18,508 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@365df43d: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:52:19,036 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:54:32,532 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73600b34: startup date [Wed Apr 13 11:54:32 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:54:32,587 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:54:32,879 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:54:33,180 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:54:33,225 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@566c7ea0: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:54:33,764 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 11:55:21,858 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 11:55:21 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 11:55:21,932 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 11:55:22,255 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 11:55:22,548 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 11:55:22,591 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4cfa1baf: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 11:55:23,124 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:18:57,661 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 12:18:57 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:18:57,715 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:18:57,976 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:18:58,348 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:18:58,395 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6cb83869: defining beans [toLogisticsCenterServiceImpl,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:18:58,925 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:21:12,387 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 12:21:12 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:21:12,439 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:21:12,699 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:21:12,986 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:21:13,030 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4cfa1baf: defining beans [toLogisticsCenterService,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:21:13,552 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:21:28,411 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5dbfa3e4: startup date [Wed Apr 13 12:21:28 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:21:28,468 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:21:28,796 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:21:29,095 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:21:29,148 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@77b83b6e: defining beans [toLogisticsCenterService,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:21:29,753 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:22:04,957 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@411167f3: startup date [Wed Apr 13 12:22:04 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:22:05,019 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:22:05,341 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:22:05,635 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:22:05,685 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4f03a2d8: defining beans [toLogisticsCenterService,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,wayBillDetailMapper,wayBillInfoMapper,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:22:06,261 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:24:14,244 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73600b34: startup date [Wed Apr 13 12:24:14 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:24:14,298 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:24:14,571 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:24:14,846 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:24:14,889 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@382fa5a4: defining beans [toLogisticsCenterService,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:24:15,410 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:26:09,205 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 12:26:09 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:26:09,260 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:26:09,521 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:26:09,794 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:26:09,836 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@4cfa1baf: defining beans [toLogisticsCenterService,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:26:10,369 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:27:39,247 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@28615dc4: startup date [Wed Apr 13 12:27:39 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:27:39,305 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:27:39,598 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:27:39,888 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:27:39,945 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@59303fe0: defining beans [toLogisticsCenterService,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:27:40,535 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:30:17,177 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7b8d343a: startup date [Wed Apr 13 12:30:17 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:30:17,234 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:30:17,544 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:30:17,843 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:30:17,890 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@382fa5a4: defining beans [toLogisticsCenterService,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:30:18,498 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:30:52,816 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5dbfa3e4: startup date [Wed Apr 13 12:30:52 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:30:52,878 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:30:53,214 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:30:53,578 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:30:53,634 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@77b83b6e: defining beans [toLogisticsCenterService,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:30:54,285 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:32:23,451 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@73600b34: startup date [Wed Apr 13 12:32:23 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:32:23,509 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:32:23,828 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:315)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:32:24,143 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:32:24,195 method:org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:598)
+Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@224d8369: defining beans [toLogisticsCenterService,jDExpressTask,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,dataSourceOrderCenter,sqlSessionFactoryOrderCenter,sqlSessionTemplateOrderCenter,mapperScannerOrderCenter,transactionManagerOrderCenter,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,txAdviceOrderCenter,daoPointOrderCenter,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,expressInfoMapper]; root of factory hierarchy
+[INFO ] 2016-04-13 12:32:24,862 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:37:31,232 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2d5b2e18: startup date [Wed Apr 13 12:37:31 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:37:31,280 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:37:31,622 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:37:31,879 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:37:32,319 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:43:49,331 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@598ec9af: startup date [Wed Apr 13 12:43:49 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:43:49,380 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:43:49,668 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:43:49,894 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:43:50,193 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:45:12,023 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2fdaa156: startup date [Wed Apr 13 12:45:12 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:45:12,072 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:45:12,325 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:45:12,560 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:45:12,845 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:51:40,833 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@598ec9af: startup date [Wed Apr 13 12:51:40 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:51:40,883 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:51:41,138 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:51:41,385 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:51:41,842 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:52:43,374 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a962da5: startup date [Wed Apr 13 12:52:43 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:52:43,422 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:52:43,675 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:52:43,928 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:52:44,374 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:55:22,628 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@598ec9af: startup date [Wed Apr 13 12:55:22 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:55:22,676 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:55:22,919 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:55:23,162 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:55:23,595 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:58:49,191 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a962da5: startup date [Wed Apr 13 12:58:49 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 12:58:49,237 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 12:58:49,488 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 12:58:49,774 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 12:58:50,221 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 12:58:50,948 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[INFO ] 2016-04-13 12:58:50,975 method:org.springframework.jdbc.support.SQLErrorCodesFactory.<init>(SQLErrorCodesFactory.java:126)
+SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+[INFO ] 2016-04-13 13:01:07,198 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@598ec9af: startup date [Wed Apr 13 13:01:07 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:01:07,246 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:01:07,501 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 13:01:07,786 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:01:08,215 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:05:38,745 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a962da5: startup date [Wed Apr 13 13:05:38 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:05:38,799 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:05:39,113 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 13:05:39,491 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:05:39,985 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[WARN ] 2016-04-13 13:05:40,331 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)
+Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waybillInfoServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at obtain_logistics_info.Test.main(Test.java:26)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 13 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 15 more
+[INFO ] 2016-04-13 13:05:40,333 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 13:09:21,516 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@598ec9af: startup date [Wed Apr 13 13:09:21 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:09:21,570 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:09:21,873 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 13:09:22,184 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:09:22,787 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[WARN ] 2016-04-13 13:09:23,158 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)
+Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waybillInfoServiceImpl': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at obtain_logistics_info.Test.main(Test.java:26)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 13 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 15 more
+[INFO ] 2016-04-13 13:09:23,162 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 13:10:32,317 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@598ec9af: startup date [Wed Apr 13 13:10:32 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:10:32,377 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:10:32,662 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 13:10:32,937 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:10:33,410 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[WARN ] 2016-04-13 13:10:33,765 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)
+Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waybillInfoService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at obtain_logistics_info.Test.main(Test.java:26)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 13 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 15 more
+[INFO ] 2016-04-13 13:10:33,775 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 13:11:34,994 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a962da5: startup date [Wed Apr 13 13:11:34 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:11:35,047 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:11:35,335 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 13:11:35,613 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:11:36,090 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[WARN ] 2016-04-13 13:11:36,419 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)
+Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waybillInfoService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at obtain_logistics_info.Test.main(Test.java:26)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 13 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 15 more
+[INFO ] 2016-04-13 13:11:36,422 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 13:12:44,320 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a962da5: startup date [Wed Apr 13 13:12:44 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:12:44,374 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:12:44,652 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[INFO ] 2016-04-13 13:12:44,917 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:12:45,404 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[WARN ] 2016-04-13 13:12:45,813 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)
+Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waybillInfoService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at obtain_logistics_info.Test.main(Test.java:26)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 13 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 15 more
+[INFO ] 2016-04-13 13:12:45,815 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 13:13:41,311 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a962da5: startup date [Wed Apr 13 13:13:41 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:13:41,360 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:13:41,665 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:13:41,766 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:13:42,024 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:158)
+No MyBatis mapper was found in '[com.ehaoyao.obtain_logistics_info.**.mapper.*(..)]' package. Please check your configuration.
+[INFO ] 2016-04-13 13:13:42,045 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:13:42,580 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[WARN ] 2016-04-13 13:13:43,068 method:org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:487)
+Exception encountered during context initialization - cancelling refresh attempt
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'waybillInfoService': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1202)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:476)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:303)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:299)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:762)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:757)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:480)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at obtain_logistics_info.Test.main(Test.java:26)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper com.ehaoyao.logistics.jd.service.impl.WaybillInfoServiceImpl.waybillInfoMapper; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:561)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 13 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1054)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:949)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:533)
+	... 15 more
+[INFO ] 2016-04-13 13:13:43,086 method:com.alibaba.druid.pool.DruidDataSource.close(DruidDataSource.java:1385)
+{dataSource-1} closed
+[INFO ] 2016-04-13 13:15:02,188 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3a962da5: startup date [Wed Apr 13 13:15:02 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:15:02,238 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:15:02,499 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:15:02,594 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:15:02,865 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:15:02,865 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:15:02,886 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:15:03,398 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:15:03,796 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:16:31,027 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@bb2d83d: startup date [Wed Apr 13 13:16:31 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:16:31,078 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:16:31,374 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 13:16:31,423 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:16:31,507 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:16:31,752 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:16:31,753 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:16:31,773 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:16:32,319 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:16:33,002 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:16:35,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:16:35】
+[INFO ] 2016-04-13 13:16:35,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:16:35,一共耗时：0.0s
+[INFO ] 2016-04-13 13:16:40,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:16:40】
+[INFO ] 2016-04-13 13:16:40,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:16:40,一共耗时：0.0s
+[INFO ] 2016-04-13 13:16:45,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:16:45】
+[INFO ] 2016-04-13 13:16:45,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:16:45,一共耗时：0.0s
+[INFO ] 2016-04-13 13:16:50,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:16:50】
+[INFO ] 2016-04-13 13:16:50,004 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:16:50,一共耗时：0.001s
+[INFO ] 2016-04-13 13:16:55,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:16:55】
+[INFO ] 2016-04-13 13:16:55,003 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:16:55,一共耗时：0.002s
+[INFO ] 2016-04-13 13:17:02,137 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@10543360: startup date [Wed Apr 13 13:17:02 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:17:02,187 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:17:02,454 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 13:17:02,498 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:17:02,579 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:17:02,803 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:17:02,803 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:17:02,822 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:17:03,342 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:17:03,790 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:17:05,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:05】
+[INFO ] 2016-04-13 13:17:05,413 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:05,一共耗时：0.411s
+[INFO ] 2016-04-13 13:17:10,000 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:10】
+[INFO ] 2016-04-13 13:17:10,009 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:10,一共耗时：0.009s
+[INFO ] 2016-04-13 13:17:15,000 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:15】
+[INFO ] 2016-04-13 13:17:15,007 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:15,一共耗时：0.007s
+[INFO ] 2016-04-13 13:17:20,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:20】
+[INFO ] 2016-04-13 13:17:20,008 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:20,一共耗时：0.006s
+[INFO ] 2016-04-13 13:17:25,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:25】
+[INFO ] 2016-04-13 13:17:25,009 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:25,一共耗时：0.008s
+[INFO ] 2016-04-13 13:17:30,000 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:30】
+[INFO ] 2016-04-13 13:17:30,006 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:30,一共耗时：0.006s
+[INFO ] 2016-04-13 13:17:35,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:35】
+[INFO ] 2016-04-13 13:17:35,011 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:35,一共耗时：0.009s
+[INFO ] 2016-04-13 13:17:40,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:40】
+[INFO ] 2016-04-13 13:17:40,005 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:40,一共耗时：0.004s
+[INFO ] 2016-04-13 13:17:45,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:45】
+[INFO ] 2016-04-13 13:17:45,010 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:45,一共耗时：0.008s
+[INFO ] 2016-04-13 13:17:50,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:50】
+[INFO ] 2016-04-13 13:17:50,012 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:50,一共耗时：0.011s
+[INFO ] 2016-04-13 13:17:55,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:17:55】
+[INFO ] 2016-04-13 13:17:55,006 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:17:55,一共耗时：0.004s
+[INFO ] 2016-04-13 13:18:00,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:00】
+[INFO ] 2016-04-13 13:18:00,005 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:00,一共耗时：0.004s
+[INFO ] 2016-04-13 13:18:05,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:05】
+[INFO ] 2016-04-13 13:18:05,012 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:05,一共耗时：0.011s
+[INFO ] 2016-04-13 13:18:10,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:10】
+[INFO ] 2016-04-13 13:18:10,011 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:10,一共耗时：0.01s
+[INFO ] 2016-04-13 13:18:15,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:15】
+[INFO ] 2016-04-13 13:18:15,008 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:15,一共耗时：0.007s
+[INFO ] 2016-04-13 13:18:20,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:20】
+[INFO ] 2016-04-13 13:18:20,006 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:20,一共耗时：0.005s
+[INFO ] 2016-04-13 13:18:25,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:25】
+[INFO ] 2016-04-13 13:18:25,005 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:25,一共耗时：0.004s
+[INFO ] 2016-04-13 13:18:30,000 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:30】
+[INFO ] 2016-04-13 13:18:30,008 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:30,一共耗时：0.008s
+[INFO ] 2016-04-13 13:18:35,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:35】
+[INFO ] 2016-04-13 13:18:35,008 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:35,一共耗时：0.006s
+[INFO ] 2016-04-13 13:18:40,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:40】
+[INFO ] 2016-04-13 13:18:40,006 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:40,一共耗时：0.005s
+[INFO ] 2016-04-13 13:18:45,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:45】
+[INFO ] 2016-04-13 13:18:45,007 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:45,一共耗时：0.005s
+[INFO ] 2016-04-13 13:18:50,003 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:50】
+[INFO ] 2016-04-13 13:18:50,007 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:50,一共耗时：0.004s
+[INFO ] 2016-04-13 13:18:55,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:18:55】
+[INFO ] 2016-04-13 13:18:55,005 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:18:55,一共耗时：0.004s
+[INFO ] 2016-04-13 13:19:00,003 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:19:00】
+[INFO ] 2016-04-13 13:19:00,013 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:19:00,一共耗时：0.01s
+[INFO ] 2016-04-13 13:19:05,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:19:05】
+[INFO ] 2016-04-13 13:19:05,005 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:19:05,一共耗时：0.004s
+[INFO ] 2016-04-13 13:19:10,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:19:10】
+[INFO ] 2016-04-13 13:19:10,006 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:58)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:19:10,一共耗时：0.005s
+[INFO ] 2016-04-13 13:19:15,168 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@a9292cb: startup date [Wed Apr 13 13:19:15 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:19:15,221 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:19:15,522 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 13:19:15,572 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:19:15,661 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:19:15,946 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:19:15,946 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:19:15,967 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:19:16,538 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:19:17,002 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:19:20,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:19:20】
+[INFO ] 2016-04-13 13:19:20,457 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:59)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:19:20,一共耗时：0.455s
+[INFO ] 2016-04-13 13:19:25,000 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:43)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:19:25】
+[INFO ] 2016-04-13 13:19:25,005 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:59)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:19:25,一共耗时：0.005s
+[INFO ] 2016-04-13 13:26:44,392 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@74cbe891: startup date [Wed Apr 13 13:26:44 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:26:44,450 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:26:44,787 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 13:26:44,847 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:26:44,942 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:26:45,262 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:26:45,262 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:26:45,292 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:26:45,920 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:26:46,506 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:26:50,003 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:26:50】
+[INFO ] 2016-04-13 13:26:56,393 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:48)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:26:50,一共耗时：6.39s
+[INFO ] 2016-04-13 13:27:00,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:27:00】
+[INFO ] 2016-04-13 13:27:38,897 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@515063db: startup date [Wed Apr 13 13:27:38 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:27:38,966 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:27:39,258 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 13:27:39,308 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:27:39,395 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:27:39,694 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:27:39,694 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:27:39,720 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:27:40,335 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:27:40,846 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:27:45,003 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:27:45】
+[INFO ] 2016-04-13 13:27:52,464 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:48)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:27:45,一共耗时：7.462s
+[INFO ] 2016-04-13 13:27:55,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:27:55】
+[INFO ] 2016-04-13 13:28:08,004 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@515063db: startup date [Wed Apr 13 13:28:08 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:28:08,057 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:28:08,352 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 13:28:08,399 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:28:08,490 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:28:08,764 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:28:08,764 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:28:08,791 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:28:09,394 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:28:09,950 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:28:15,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:28:15】
+[INFO ] 2016-04-13 13:28:21,509 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:48)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:28:15,一共耗时：6.507s
+[INFO ] 2016-04-13 13:39:18,295 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@31731b2f: startup date [Wed Apr 13 13:39:18 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:39:18,346 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:39:18,692 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 13:39:18,745 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:39:18,837 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:39:19,091 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:39:19,092 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:39:19,114 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:39:19,736 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:39:20,277 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:39:25,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:39:25】
+[INFO ] 2016-04-13 13:39:43,894 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:48)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:39:25,一共耗时：18.892s
+[INFO ] 2016-04-13 13:39:45,001 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:39:45】
+[INFO ] 2016-04-13 13:54:38,749 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@31731b2f: startup date [Wed Apr 13 13:54:38 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:54:38,818 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:54:39,165 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 13:54:39,246 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:54:39,344 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:54:39,756 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:54:39,757 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:54:39,780 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:54:53,905 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:54:54,466 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:54:55,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:54:55】
+[INFO ] 2016-04-13 13:55:04,065 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+[INFO ] 2016-04-13 13:55:04,240 method:org.springframework.jdbc.support.SQLErrorCodesFactory.<init>(SQLErrorCodesFactory.java:126)
+SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+[INFO ] 2016-04-13 13:55:06,916 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:48)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:54:55,一共耗时：11.914s
+[INFO ] 2016-04-13 13:56:05,719 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2a063e60: startup date [Wed Apr 13 13:56:05 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 13:56:05,767 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 13:56:06,025 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 13:56:06,064 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 13:56:06,155 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 13:56:06,428 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 13:56:06,429 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 13:56:06,447 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 13:56:07,018 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 13:56:07,542 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 13:56:10,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 13:56:10】
+[INFO ] 2016-04-13 13:56:10,547 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:48)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 13:56:10,一共耗时：0.545s
+[INFO ] 2016-04-13 16:49:54,374 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@515063db: startup date [Wed Apr 13 16:49:54 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 16:49:54,425 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 16:49:54,768 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 16:49:54,827 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 16:49:54,924 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 16:49:55,185 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 16:49:55,186 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 16:49:55,214 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 16:49:55,814 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 16:49:56,338 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 16:50:00,008 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 16:50:00】
+[INFO ] 2016-04-13 16:51:01,538 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@74cbe891: startup date [Wed Apr 13 16:51:01 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 16:51:01,589 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 16:51:01,929 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 16:51:01,977 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 16:51:02,088 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 16:51:02,375 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 16:51:02,375 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 16:51:02,402 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 16:51:02,988 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 16:51:03,516 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 16:51:05,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 16:51:05】
+[INFO ] 2016-04-13 16:53:59,767 method:org.springframework.context.support.AbstractApplicationContext.prepareRefresh(AbstractApplicationContext.java:510)
+Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@515063db: startup date [Wed Apr 13 16:53:59 CST 2016]; root of context hierarchy
+[INFO ] 2016-04-13 16:53:59,830 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext.xml]
+[INFO ] 2016-04-13 16:54:00,144 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-scheduled.xml]
+[INFO ] 2016-04-13 16:54:00,197 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-logisticsCenter.xml]
+[INFO ] 2016-04-13 16:54:00,283 method:org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:317)
+Loading XML bean definitions from class path resource [spring/applicationContext-ibatis-orderCenter.xml]
+[WARN ] 2016-04-13 16:54:00,560 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[WARN ] 2016-04-13 16:54:00,560 method:org.mybatis.spring.mapper.ClassPathMapperScanner.doScan(ClassPathMapperScanner.java:186)
+Cannot use both: sqlSessionTemplate and sqlSessionFactory together. sqlSessionFactory is ignored.
+[INFO ] 2016-04-13 16:54:00,586 method:org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:172)
+Loading properties file from class path resource [jdbc.properties]
+[INFO ] 2016-04-13 16:54:01,163 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-1} inited
+[INFO ] 2016-04-13 16:54:01,701 method:com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:669)
+{dataSource-2} inited
+[INFO ] 2016-04-13 16:54:05,002 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:40)
+【从订单中心抓取订单至物流中心，开始时间：2016-04-13 16:54:05】
+[INFO ] 2016-04-13 16:55:06,064 method:com.ehaoyao.logistics.jd.task.JDExpressTask.insertWayBill(JDExpressTask.java:48)
+【从订单中心抓取订单至物流中心，结束时间：2016-04-13 16:54:05,一共耗时：61.061s

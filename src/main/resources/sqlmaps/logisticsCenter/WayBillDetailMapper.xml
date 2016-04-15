@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillDetailMapper" >
+  <resultMap id="BaseResultMap" type="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillDetail" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="waybill_source" property="waybillSource" jdbcType="VARCHAR" />
+    <result column="waybill_number" property="waybillNumber" jdbcType="VARCHAR" />
+    <result column="waybill_status" property="waybillStatus" jdbcType="CHAR" />
+    <result column="waybill_time" property="waybillTime" jdbcType="TIMESTAMP" />
+    <result column="waybill_content" property="waybillContent" jdbcType="VARCHAR" />
+    <result column="operator" property="operator" jdbcType="VARCHAR" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, waybill_source, waybill_number, waybill_status, waybill_time, waybill_content, 
+    operator, create_time
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from waybill_detail
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from waybill_detail
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillDetail" >
+    insert into waybill_detail (id, waybill_source, waybill_number, 
+      waybill_status, waybill_time, waybill_content, 
+      operator, create_time)
+    values (#{id,jdbcType=BIGINT}, #{waybillSource,jdbcType=VARCHAR}, #{waybillNumber,jdbcType=VARCHAR}, 
+      #{waybillStatus,jdbcType=CHAR}, #{waybillTime,jdbcType=TIMESTAMP}, #{waybillContent,jdbcType=VARCHAR}, 
+      #{operator,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP})
+  </insert>
+  
+   <!-- 批量insert -->
+  <insert id="insertWayBillDetailBatch" parameterType="java.util.List" >
+    insert into waybill_detail (waybill_source, waybill_number, 
+      waybill_status, waybill_time, waybill_content, 
+      operator, create_time) values 
+   	<foreach collection="list" item="item" index="index" separator="," >
+   	( #{item.waybillSource,jdbcType=VARCHAR}, #{item.waybillNumber,jdbcType=VARCHAR}, 
+      #{item.waybillStatus,jdbcType=CHAR}, #{item.waybillTime,jdbcType=TIMESTAMP}, #{item.waybillContent,jdbcType=VARCHAR}, 
+      #{item.operator,jdbcType=VARCHAR}, #{item.createTime,jdbcType=TIMESTAMP}
+      )
+      </foreach>
+  </insert>
+  
+  <insert id="insertSelective" parameterType="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillDetail" >
+    insert into waybill_detail
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="waybillSource != null" >
+        waybill_source,
+      </if>
+      <if test="waybillNumber != null" >
+        waybill_number,
+      </if>
+      <if test="waybillStatus != null" >
+        waybill_status,
+      </if>
+      <if test="waybillTime != null" >
+        waybill_time,
+      </if>
+      <if test="waybillContent != null" >
+        waybill_content,
+      </if>
+      <if test="operator != null" >
+        operator,
+      </if>
+      <if test="createTime != null" >
+        create_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="waybillSource != null" >
+        #{waybillSource,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillNumber != null" >
+        #{waybillNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillStatus != null" >
+        #{waybillStatus,jdbcType=CHAR},
+      </if>
+      <if test="waybillTime != null" >
+        #{waybillTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="waybillContent != null" >
+        #{waybillContent,jdbcType=VARCHAR},
+      </if>
+      <if test="operator != null" >
+        #{operator,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillDetail" >
+    update waybill_detail
+    <set >
+      <if test="waybillSource != null" >
+        waybill_source = #{waybillSource,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillNumber != null" >
+        waybill_number = #{waybillNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="waybillStatus != null" >
+        waybill_status = #{waybillStatus,jdbcType=CHAR},
+      </if>
+      <if test="waybillTime != null" >
+        waybill_time = #{waybillTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="waybillContent != null" >
+        waybill_content = #{waybillContent,jdbcType=VARCHAR},
+      </if>
+      <if test="operator != null" >
+        operator = #{operator,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null" >
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.ehaoyao.logistics.jd.model.logisticscenter.WayBillDetail" >
+    update waybill_detail
+    set waybill_source = #{waybillSource,jdbcType=VARCHAR},
+      waybill_number = #{waybillNumber,jdbcType=VARCHAR},
+      waybill_status = #{waybillStatus,jdbcType=CHAR},
+      waybill_time = #{waybillTime,jdbcType=TIMESTAMP},
+      waybill_content = #{waybillContent,jdbcType=VARCHAR},
+      operator = #{operator,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
