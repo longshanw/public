@@ -12,9 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.ehaoyao.logistics.common.utils.ReadConfigs;
+import com.ehaoyao.logistics.jd.service.ExpressInfoService;
 import com.ehaoyao.logistics.jd.service.ToLogisticsCenterService;
 import com.ehaoyao.logistics.jd.service.WaybillDetailService;
 import com.ehaoyao.logistics.jd.service.WaybillInfoService;
+import com.ehaoyao.logistics.jd.vo.OrderExpressVo;
 
 /**
  * @author xushunxing 
@@ -35,21 +37,45 @@ public class JDExpressTask {
 	@Autowired
 	ToLogisticsCenterService toLogisticsService;
 	
+	@Autowired
+	ExpressInfoService expressInfoService;
+	
 	/**
 	 * 将订单中心的运单写入到物流中心
 	 */
 	public void insertWayBill(){
 		Date startDate=new Date();
-		Object obj = null ;
+		int insCount = 0 ;//每次最终成功插入条数
+		int totalInsCount = 0;//累计最终成功插入条数
+		int dealCount = 500;//每次处理条数
+		int count = 1;//当前处理次数
+		
 		logger.info("【从订单中心抓取订单至物流中心，开始时间："+sdf.format(startDate)+"】");
 		try {
-			obj = toLogisticsService.insertWayBill();
+			//从订单中心获取已配送的订单信息集合
+			List<OrderExpressVo> orderExpressList = expressInfoService.selectExpressInfoList();
+			for(int i = 0;i<orderExpressList.size();i+=dealCount){
+				List  subList = null;
+				if((i+dealCount)>orderExpressList.size()){
+					subList = orderExpressList.subList(i,orderExpressList.size());
+				}else{
+					subList = orderExpressList.subList(i,i+dealCount);
+				}
+				System.out.println(i+"---"+orderExpressList.size()+"--------"+(i+subList.size()));
+				//	将订单中心查询到的已配送的订单及运单号等信息插入物流中心
+				if(subList!=null&&!subList.isEmpty()){
+					insCount = (Integer) toLogisticsService.insertLogisticsCenter(subList);
+					logger.info("【共从订单中心获取"+orderExpressList.size()+"条记录，每次处理"+dealCount+"条，共需处理"+((orderExpressList.size()-1)/dealCount+1)+"次，当前处理第"+count+"次，当前成功插入"+insCount+"条，累计成功插入"+totalInsCount+"条】");
+					totalInsCount+=insCount;
+					count++;//每次处理后加1
+				}
+			}
 		} catch (Exception e) {
 			logger.error("【从订单中心抓取订单至物流中心，异常！异常信息：】"+e);
 			e.printStackTrace();
 		}
 		Date endDate=new Date();
-		logger.info("【从订单中心抓取订单至物流中心，结束时间："+sdf.format(startDate)+",一共耗时："+(endDate.getTime()-startDate.getTime())/1000.0+"s,本次共插入"+(obj!=null?obj:0)+"条】");
+		logger.info("【从订单中心抓取订单至物流中心，结束时间："+sdf.format(startDate)+",一共耗时："+(endDate.getTime()-startDate.getTime())/1000.0+"s，本次任务共成功插入"+totalInsCount+"条记录】");
 	}
 	/**
 	 * 调用京东的API,更新未妥投的运单信息

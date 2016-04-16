@@ -6,9 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.ResourceBundle;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.annotation.Resource;
 
@@ -18,11 +15,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.ehaoyao.logistics.common.utils.DateUtil;
-import com.ehaoyao.logistics.common.utils.ReadConfigs;
 import com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillDetailMapper;
 import com.ehaoyao.logistics.jd.mapper.logisticscenter.WayBillInfoMapper;
-import com.ehaoyao.logistics.jd.mapper.ordercenter.ExpressInfoMapper;
 import com.ehaoyao.logistics.jd.model.logisticscenter.WayBillDetail;
 import com.ehaoyao.logistics.jd.model.logisticscenter.WayBillInfo;
 import com.ehaoyao.logistics.jd.service.ToLogisticsCenterService;
@@ -33,12 +27,9 @@ import com.ehaoyao.logistics.jd.vo.OrderExpressVo;
 public class ToLogisticsCenterServiceImpl implements ToLogisticsCenterService {
 	
 	private static final Logger logger = Logger.getLogger(ToLogisticsCenterServiceImpl.class);
-	private static final ReadConfigs jdConfig = new ReadConfigs("jdconfig");
 	private static ResourceBundle bundle = ResourceBundle.getBundle("express");
 	private static ResourceBundle bundle1 = ResourceBundle.getBundle("orderCodeToKD100Code");
 	private static ResourceBundle bundle2 = ResourceBundle.getBundle("expressIDtoKD100Code");
-	@Autowired
-	ExpressInfoMapper expressInfoMapper;
 	
 	@Autowired
 	WayBillInfoMapper wayBillInfoMapper;
@@ -46,65 +37,11 @@ public class ToLogisticsCenterServiceImpl implements ToLogisticsCenterService {
 	@Autowired
 	WayBillDetailMapper wayBillDetailMapper;
 	
-	@Resource(name="sqlSessionTemplateOrderCenter")
-	private SqlSessionTemplate orderSqlSessionTemplate;
-	
 	@Resource(name="sqlSessionTemplateLogisticsCenter")
 	private SqlSessionTemplate logisticsSqlSessionTemplate;
 	
 	
-	@Override
-	public Object insertWayBill() throws Exception {
-		List<OrderExpressVo> orderExpressList;
-		int insWayBillInfoCount = 0;
-		
-		//1,	从订单中心获取已配送的初始订单
-		int orderIntervalTime = jdConfig.getInteger("jd_normal_tologistics_minute");
-		String startTime=DateUtil.getDate(DateUtil.getPreMinute(orderIntervalTime),2,null);//当前时间向前推迟xxx分钟
-		String endTime=DateUtil.getDate(new Date(), 2, null);
-		
-		Map<String,Object> map = new HashMap<String,Object>();
-		String[] orderStatusArr = {"s01","s02"};
-		map.put("orderStatusArr", orderStatusArr);
-		map.put("wayBillTimeStart", startTime);
-		map.put("wayBillTimeEnd", endTime);
-		logger.info("【从订单中心获取已配送的初始订单，查询条件:"+map+"】");
-		orderExpressList = expressInfoMapper.selectHasShipByCondition(map);
-		for(int i = 0;i<orderExpressList.size();i+=100){
-		    List  newlist = orderExpressList.subList(i,i+99);
-		    insertLogisticsCenter(newlist);
-		}
-		//2,	将订单中心查询到的已配送的订单及运单号等信息插入物流中心
-		insWayBillInfoCount = (int) insertLogisticsCenter(orderExpressList);
-		return insWayBillInfoCount;
-	}
 	
-	private static AtomicInteger line = new AtomicInteger(0);
-    static ExecutorService pool = Executors.newFixedThreadPool(10);
-	    
-	public void dealSchedule(final List<OrderExpressVo> orderExpressList){
-		
-		for (int i = 0;i<10;i++){
-			Thread thread = new Thread(){
-				Integer num;
-
-				@Override
-				public void run() {
-					  System.out.println("线程:" + Thread.currentThread().getName());
-					try {
-						num = (Integer) insertLogisticsCenter(orderExpressList);
-					} catch (Exception e) {
-						e.printStackTrace();
-					}
-					  System.out.println("startline = " +(num-1000)+",endline = " + num);
-					  
-				}
-				
-			};
-            pool.execute(thread);
-        }
-        pool.shutdown();
-	}
 	
 	/**
 	 * 将订单中心查询到的已配送的订单及运单号等信息插入物流中心
@@ -181,6 +118,7 @@ public class ToLogisticsCenterServiceImpl implements ToLogisticsCenterService {
 		return insWayBillInfoCount;
 	}
 
+	
 	/**
 	 * 获取运单来源标识
 	 * @param expressComName

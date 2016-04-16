@@ -5,12 +5,17 @@ import java.util.List;
 public class Test {
 	public static void main(String[] args) {
 		List<Integer> list = new java.util.ArrayList<>();
-		for(int i=0;i<1000;i++){
+		for(int i=0;i<1001;i++){
 			list.add(i);
 		}
 		for(int i = 0;i<list.size();i+=100){
-		    List  newlist = list.subList(i,i+99);
-		   System.out.println(list.size()+"---"+i+"--"+(i+newlist.size()));
+			List  subList = null;
+			if((i+100)>list.size()){
+				subList = list.subList(i,list.size());
+			}else{
+				subList = list.subList(i,i+100);
+			}
+				System.out.println(i+"---"+list.size()+"--------"+(i+subList.size()));
 		}
 	}
 }
