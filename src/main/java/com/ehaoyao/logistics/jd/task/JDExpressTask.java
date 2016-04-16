@@ -44,16 +44,18 @@ public class JDExpressTask {
 	 * 将订单中心的运单写入到物流中心
 	 */
 	public void insertWayBill(){
-		Date startDate=new Date();
 		int insCount = 0 ;//每次最终成功插入条数
 		int totalInsCount = 0;//累计最终成功插入条数
-		int dealCount = 500;//每次处理条数
+		int dealCount = configs.getInteger("commitCount");//每次处理条数
 		int count = 1;//当前处理次数
-		
-		logger.info("【从订单中心抓取订单至物流中心，开始时间："+sdf.format(startDate)+"】");
+		long startTime = System.currentTimeMillis();
+		logger.info("【从订单中心抓取订单至物流中心，开始时间："+sdf.format(startTime)+"】");
 		try {
+			long queryStartTime = System.currentTimeMillis();
 			//从订单中心获取已配送的订单信息集合
 			List<OrderExpressVo> orderExpressList = expressInfoService.selectExpressInfoList();
+			long queryEndTime = System.currentTimeMillis();
+			logger.info("【从订单中心获取已配送的订单信息集合，共耗时："+(queryEndTime-queryStartTime)/1000+"s】");
 			for(int i = 0;i<orderExpressList.size();i+=dealCount){
 				List  subList = null;
 				if((i+dealCount)>orderExpressList.size()){
@@ -74,8 +76,8 @@ public class JDExpressTask {
 			logger.error("【从订单中心抓取订单至物流中心，异常！异常信息：】"+e);
 			e.printStackTrace();
 		}
-		Date endDate=new Date();
-		logger.info("【从订单中心抓取订单至物流中心，结束时间："+sdf.format(startDate)+",一共耗时："+(endDate.getTime()-startDate.getTime())/1000.0+"s，本次任务共成功插入"+totalInsCount+"条记录】");
+		long endTime = System.currentTimeMillis();
+		logger.info("【从订单中心抓取订单至物流中心，结束时间："+sdf.format(endTime)+",一共耗时："+(endTime-startTime)/1000.0+"s，本次任务共成功插入"+totalInsCount+"条记录】");
 	}
 	/**
 	 * 调用京东的API,更新未妥投的运单信息

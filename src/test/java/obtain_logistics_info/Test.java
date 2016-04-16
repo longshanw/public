@@ -1,21 +1,15 @@
 package obtain_logistics_info;
 
-import java.util.List;
+import java.text.SimpleDateFormat;
 
 public class Test {
+	private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	public static void main(String[] args) {
-		List<Integer> list = new java.util.ArrayList<>();
-		for(int i=0;i<1001;i++){
-			list.add(i);
+		long startTime = System.currentTimeMillis();
+		for(int i=0;i<=1000000;i++){
+			i += (i/2);
 		}
-		for(int i = 0;i<list.size();i+=100){
-			List  subList = null;
-			if((i+100)>list.size()){
-				subList = list.subList(i,list.size());
-			}else{
-				subList = list.subList(i,i+100);
-			}
-				System.out.println(i+"---"+list.size()+"--------"+(i+subList.size()));
-		}
+		long endTime = System.currentTimeMillis();
+		System.out.println((endTime-startTime)/1000000);
 	}
 }
